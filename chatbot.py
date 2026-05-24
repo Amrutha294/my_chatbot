@@ -5,7 +5,7 @@ API_KEY = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=API_KEY)
 
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 if "chat" not in st.session_state:
     st.session_state.chat = model.start_chat(history=[])
