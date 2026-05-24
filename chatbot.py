@@ -7,8 +7,8 @@ API_KEY = st.secrets["GEMINI_API_KEY"]
 # Configure Gemini API
 genai.configure(api_key=API_KEY)
 
-# Load Gemini Model
-model = genai.GenerativeModel("gemini-pro")
+# Load
+Gemini Modelmodel = genai.GenerativeModel("gemini-1.5-flash")
 
 # Create chat session
 if "chat" not in st.session_state:
